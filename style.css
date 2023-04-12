@@ -1,0 +1,57 @@
+.container{
+    width: 65%;
+    background-color: #282424;
+    padding: 12px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .container { 
+        width: 100%;
+
+    }
+    p, li {
+        font-size: 9pt;
+    }
+    h1 {
+        font-size: 16pt;
+    }
+    h2 {
+        font-size: 12pt;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .card-little{
+        width: 40% !important;
+    }
+}
+.navbar{
+    position: relative;
+}
+body{
+    color: white;
+    background-image: url(pictures/background.png);
+}
+
+:root{
+    --bs-primary-rgb: 52,92,124;
+    --bs-secondary-rgb: 125,125,125;
+    --bs-success-rgb: 23,174,172;
+    --bs-info-rgb: 00,114,200;
+    --bs-warning-rgb: 243,155,20;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 197, 207, 217;
+    --bs-dark-rgb: 67,67,68;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+}
+
+
+
+
+
+
+
+
