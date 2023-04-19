@@ -41,7 +41,13 @@ p{
     margin-right: 5px;
 }
 
+.card-text{
+    color: black;
+}
 
+.clear{
+    clear: both;
+}
 
 
 
