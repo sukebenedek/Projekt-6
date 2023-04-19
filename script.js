@@ -1,5 +1,21 @@
+var listeners = {};
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function toTransparent(element){
+    //0-90
+    //document.getElementById("HoldTXT").style.color = "#F0F8FF";
+    
+    
+    element.addEventListener('mouseover', function(event){
+        listeners[`${element}`] = true
+    });
+    
+    element.addEventListener('mouseleave', function(event){
+        listeners[`${element}`] = false
+    });
 }
 
 async function troll() {
@@ -14,3 +30,4 @@ async function troll() {
     console.log("xd");
     alert("ACHTUNG!");
 }
+
