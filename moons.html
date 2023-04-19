@@ -5,87 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="pictures/moon.png">
-    <title>Holdak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>Holdak</title>
 </head>
 <body onload="troll()">
-    <h1 id="HoldTXT" onmouseenter="toTransparent(this)" onmouseleave="toTransparent(this)">Holdak</h1>
-    <div>
-        <p>A csillagászatban holdnak nevezzük a bolygók, törpebolygók és kisbolygók körül keringő égitesteket. (A csillagászok ugyanezeket mellékbolygóknak is hívják.) Nem mindig könnyű eldönteni, egy objektum-pár melyik tagja a hold. Tipikus példa erre a Naprendszerben az időközben törpebolygóvá minősített Pluto és legnagyobb, Charon nevű holdja, ez a rendszer például kettős rendszernek is tekinthető. Mivel minden anyagi testnek van gravitációs tere, a bolygó és holdja kölcsönösen vonzzák egymást. Ha a két objektum megközelítőleg azonos tömegű, kettős rendszernek nevezzük őket.</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="font-size: 22px;">
+        <div class="container-fluid">
+            <a class="navbar-brand font-italic" href="index.html" style="font-size: 28px;">Égitestek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto mx-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="stars.html">Csillagok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planets.html">Bolygók</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="moons.html">Holdak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <p>A Naprendszerben 175 holdat ismerünk. Az oldal alábbi részén a Naprendszer ismert holdjai közül sorolunk fel néhányat.</p>
-    </div>
-    <div>
-        <h2>Föld holdja</h2>
-        <p>A Hold a Föld egyetlen holdja, a Naprendszer egyik óriásholdja. A Földtől mért átlagos távolsága 384 402 kilométer, ami nagyjából a Föld átmérőjének 30-szorosa. Átmérője 3476 kilométer, ami hozzávetőleg negyede a Földének. A felszíni nehézségi gyorsulás (és így a testek súlya) körülbelül hatoda a földinek, így a rajta járó űrhajósok a 80–90 kg-os űrruhában is könnyedén mozogtak, ugráltak. A Holdnak nincsen számottevő légköre. Égboltja emiatt teljesen fekete nappal is.</p>
-        <p>A Holdat először 1959-ben a szovjet Luna-program első űrszondája, a Luna–1 érte el, de ez még csak elrepült mellette. Az első olyan, ember alkotta tárgy, amely valóban eljutott a Holdra, a Luna–2 szonda volt ugyancsak 1959-ben: ez a szonda egyszerűen becsapódott a felszínbe, és ettől megsemmisült. A Hold felszínéről először a Luna–3 készített közelképet, amikor elrepült mellette. Az első sikeres sima leszállás a Luna–9-é volt 1966. február 3-án, az Oceanus Procellarumon. Nem sokkal később, 1966. április 3-án a Luna–10 lett az első olyan szonda, amely Hold körüli pályára állt.</p>
-        <p>A Holdat nemcsak űrszondákkal kutatták, hanem mindeddig ez az egyetlen olyan Földön kívüli égitest, amelyen ember is járt. Az amerikai Apollo-program keretében először az Apollo–8-as repüléssel sikerült Hold körüli pályára állnia embert szállító űrhajónak (1968. december 24.). Majd az Apollo–11 űrhajósai, Neil Armstrong parancsnok és Buzz Aldrin holdkomppilóta lettek az első emberek, akik holdkompjukkal sikeres leszállást hajtottak végre (1969. július 20.), és küldetésük csúcspontjaként kiléphettek a holdfelszínre a Nyugalom Tengerén (Mare Tranquilitatis). A Szovjetuniónak is megvolt a maga holdprogramja, ám amikor nyilvánvalóvá vált elmaradásuk az amerikaiaktól, felhagytak a költséges versennyel. Eközben az Egyesült Államokban szintén pénzügyi okokból törölték az Apollo-program utolsó három repülését, így máig mindössze 12 amerikai űrhajós járt a Hold felszínén.</p>
+    <div class="container">
+        <h1 id="HoldTXT" onmouseenter="toTransparent(this)">Holdak</h1>
         <div>
-            <p>A Holdon több magyar vonatkozású kráter található, mindegyik konkrét személy nevét viseli: <br></p>
-            <table>
-                <tr>
-                    <th>ember neve</th>
-                    <th>foglalkozása</th>
-                    <th>kráter átmérője</th>
-                    <th>lokáció</th>
-                </tr>
-                <tr>
-                    <td>Hell</td>
-                    <td>csillagász</td>
-                    <td>31 km</td>
-                    <td>32°D 8°Ny</td>
-                </tr>
-                <tr>
-                    <td>Hédervári</td>
-                    <td>csillagász</td>
-                    <td>69 km</td>
-                    <td>
-                        82°D 84°K
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segner</td>
-                    <td>természettudós</td>
-                    <td>67 km</td>
-                    <td>
-                        59°D 48°Ny
-                    </td>
-                </tr>
-                <tr>
-                    <td>Weinek</td>
-                    <td>csillagász</td>
-                    <td>30 km</td>
-                    <td>28°D 37°K</td>
-                </tr>
-                <tr>
-                    <td>Zach</td>
-                    <td>csillagász</td>
-                    <td>52 km</td>
-                    <td>61°D 5°K</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div>
-        <h2 id="MarsTXT">Mars holdjai</h2>
-        <p> Mindkét hold a nevét Mars görög megfelelőjének, Arész hadistennek fiairól kapta, bár ezek latin megfelelői Timor és Metus lennének.</p>
-        <div>
-            <h3 id="Mars1">Phobos</h3>
-            <p>A Phobos a Mars nagyobbik holdja. A Mars felszíne és a Phobos közötti távolság mindössze 5760 km.</p>
-            <p>Az árapály-erők hatására a hold keringése kötött, vagyis a Phobos mindig ugyanazt az oldalát fordítja a bolygó felé (ahogy a Föld Holdja is). Ugyanezek az erők állandóan fékezik a Phobos mozgását, így a Marstól való távolsága egyre csökken, 100 év alatt mintegy 2 méterrel. Mintegy 30-50 millió év múlva a hold a bolygó felszínére zuhanna, ám előtte darabokra törik, ami a Mars körül egy gyűrűt fog létrehozni.</p>
-            <p>A holdat vastag porréteg borítja, amit regolitnak nevezünk. Ennek sötétszürke színe élesen elüt a Mars vörös színű felszínétől. A hold a rá vetődő fény 6%-át veri vissza. Felszínét különböző méretű becsapódásos kráterek tarkítják. Az ütközések erejét jól jellemzi az, hogy felszíndarabok váltak le róla. A Phobos felületén megfigyelhetők néhány kilométer hosszú, 100–200 méter széles, 20 méter mély barázdák. Becsapódással keletkezett a hold legnagyobb krátere, a Stickney-kráter. A becsapódáskor felszabaduló hő megolvasztotta a felszín alatti kőzeteket, amelyek így részben kitöltötték a mélyedéseket.</p>
-            <p>A legújabb kutatási eredmények szerint nem becsapódás hozta létre a Phobos felszínén található barázdákat, mert azok kora jelentős ingadozást mutat. A legfiatalabb barázdák ugyanis maximum néhány millió évesek. Azokat a Mars és a Phobos között zajló árapály erők hozták létre, ami a hold szétszakadásához fog vezetni. Ugyanis a Phobos belső szerkezete sokkal szivacsosabb, mint korábban gondolták. Valószínűleg viszonylag szorosan egymáshoz illeszkedő darabokból állhat, így szétszakadása könnyebben megtörténik.</p>
+            <p>A csillagászatban holdnak nevezzük a bolygók, törpebolygók és kisbolygók körül keringő égitesteket. (A csillagászok ugyanezeket mellékbolygóknak is hívják.) Nem mindig könnyű eldönteni, egy objektum-pár melyik tagja a hold. Tipikus példa erre a Naprendszerben az időközben törpebolygóvá minősített Pluto és legnagyobb, Charon nevű holdja, ez a rendszer például kettős rendszernek is tekinthető. Mivel minden anyagi testnek van gravitációs tere, a bolygó és holdja kölcsönösen vonzzák egymást. Ha a két objektum megközelítőleg azonos tömegű, kettős rendszernek nevezzük őket.</p>
+    
+            <p>A Naprendszerben 175 holdat ismerünk. Az oldal alábbi részén a Naprendszer ismert holdjai közül sorolunk fel néhányat.</p>
         </div>
         <div>
-            <h3 id="Mars2">Deimos</h3>
-            <p>A Deimos a Mars kisebbik holdja. Csakúgy, mint a nagyobb Mars-hold, a Phobos, a Deimos is kisméretűnek számít a Naprendszer holdjai között. A Mars mindkét holdját Asaph Hall amerikai csillagász, az Egyesült Államok Tengerészeti Obszervatóriumának (United States Naval Observatory) kutatója fedezte fel 1877. augusztus 12-én.</p>
-            <p>A Deimos sokáig a legkisebb ismert hold volt a Naprendszerben. Alakja szabálytalan, jobban hasonlít a kisbolygókra, mint a holdakra, valószínűsíthető, hogy inkább aszteroidáról van szó, amelyet a Mars gravitációja fogott be. A Mars középpontjától mért közepes keringési távolsága 23 458 km, a marsi egyenlítő síkjában, közel körpályán kering.</p>
-            <p>A világos foltok meteorit becsapódáskor a felszínre hullt finomabb anyagok lehetnek. A másik holddal ellentétben kőtömbök is vannak rajta. Két jelentősebb krátere a felvilágosodás két neves írójáról, Voltaire-ről és Swiftről kapta a nevét.</p>
-            <p>Hasonló szerkezetű égitestek a Jupiter kisbolygóövének külső részében találhatók. Ebből kifolyólag valaha valamelyik másik bolygóból kiszakadt meteor lehetett, de a Mars gravitációs mezejének csapdájába került.</p>
-            <p>Érdekesség, hogy ez a hold a Doom egyik helyszíne.</p>
+            <h2>Föld holdja</h2>
+            <div class="row">
+                <div class="col-xl-6">
+                    <!-- <img class="img-fluid" src="pictures/moon_close.png" alt="A hold közelről" title="A hold közelről"> -->
+                </div>
+                <div>
+                    <div>
+                        <img style="max-width: 100%; padding-right: 15px; padding-bottom: 5px;" class="float-start rounded" src="pictures/moon_close.png" alt="A hold közelről" title="A hold közelről">
+                        <p>A Hold a Föld egyetlen holdja, a Naprendszer egyik óriásholdja. A Földtől mért átlagos távolsága 384 402 kilométer. Átmérője 3476 kilométer, ami hozzávetőleg negyede a Földének. A felszíni nehézségi gyorsulás körülbelül hatoda a földinek, így a rajta járó űrhajósok a 80–90 kg-os űrruhában is könnyedén mozogtak, ugráltak. A Holdnak nincsen számottevő légköre. Égboltja emiatt teljesen fekete nappal is.</p>
+                        <p>A Holdat először 1959-ben a szovjet Luna-program első űrszondája, a Luna–1 érte el, de ez még csak elrepült mellette. Az első olyan, ember alkotta tárgy, amely valóban eljutott a Holdra, a Luna–2 szonda volt ugyancsak 1959-ben: ez a szonda egyszerűen becsapódott a felszínbe, és ettől megsemmisült. A Hold felszínéről először a Luna–3 készített közelképet, amikor elrepült mellette. Az első sikeres sima leszállás a Luna–9-é volt 1966. február 3-án, az Oceanus Procellarumon. Nem sokkal később, 1966. április 3-án a Luna–10 lett az első olyan szonda, amely Hold körüli pályára állt.</p>
+                        <p>A Holdat nemcsak űrszondákkal kutatták, hanem mindeddig ez az egyetlen olyan Földön kívüli égitest, amelyen ember is járt. Az amerikai Apollo-program keretében először az Apollo–8-as repüléssel sikerült Hold körüli pályára állnia embert szállító űrhajónak (1968. december 24.). Majd az Apollo–11 űrhajósai, Neil Armstrong parancsnok és Buzz Aldrin holdkomppilóta lettek az első emberek, akik holdkompjukkal sikeres leszállást hajtottak végre (1969. július 20.), és küldetésük csúcspontjaként kiléphettek a holdfelszínre a Nyugalom Tengerén (Mare Tranquilitatis). A Szovjetuniónak is megvolt a maga holdprogramja, ám amikor nyilvánvalóvá vált elmaradásuk az amerikaiaktól, felhagytak a költséges versennyel. Eközben az Egyesült Államokban szintén pénzügyi okokból törölték az Apollo-program utolsó három repülését, így máig mindössze 12 amerikai űrhajós járt a Hold felszínén.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>A Holdon több magyar vonatkozású kráter található, mindegyik konkrét személy nevét viseli: <br></p>
+                <table class="table table-success table-stripped table-hover">
+                    <thead class="table-dark">
+                        <th>ember neve</th>
+                        <th>foglalkozása</th>
+                        <th>kráter átmérője</th>
+                        <th>lokáció</th>
+                    </thead>
+                    <tr>
+                        <td>Hell</td>
+                        <td>csillagász</td>
+                        <td>31 km</td>
+                        <td>32°D 8°Ny</td>
+                    </tr>
+                    <tr>
+                        <td>Hédervári</td>
+                        <td>csillagász</td>
+                        <td>69 km</td>
+                        <td>
+                            82°D 84°K
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Segner</td>
+                        <td>természettudós</td>
+                        <td>67 km</td>
+                        <td>
+                            59°D 48°Ny
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weinek</td>
+                        <td>csillagász</td>
+                        <td>30 km</td>
+                        <td>28°D 37°K</td>
+                    </tr>
+                    <tr>
+                        <td>Zach</td>
+                        <td>csillagász</td>
+                        <td>52 km</td>
+                        <td>61°D 5°K</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h2 id="MarsTXT">Mars holdjai</h2>
+            <p> Mindkét hold a nevét Mars görög megfelelőjének, Arész hadistennek fiairól kapta, bár ezek latin megfelelői Timor és Metus lennének.</p>
+            <div>
+                <h3 id="Mars1">Phobos</h3>
+                <p>A Phobos a Mars nagyobbik holdja. A Mars felszíne és a Phobos közötti távolság mindössze 5760 km.</p>
+                <p>Az árapály-erők hatására a hold keringése kötött, vagyis a Phobos mindig ugyanazt az oldalát fordítja a bolygó felé (ahogy a Föld Holdja is). Ugyanezek az erők állandóan fékezik a Phobos mozgását, így a Marstól való távolsága egyre csökken, 100 év alatt mintegy 2 méterrel. Mintegy 30-50 millió év múlva a hold a bolygó felszínére zuhanna, ám előtte darabokra törik, ami a Mars körül egy gyűrűt fog létrehozni.</p>
+                <p>A holdat vastag porréteg borítja, amit regolitnak nevezünk. Ennek sötétszürke színe élesen elüt a Mars vörös színű felszínétől. A hold a rá vetődő fény 6%-át veri vissza. Felszínét különböző méretű becsapódásos kráterek tarkítják. Az ütközések erejét jól jellemzi az, hogy felszíndarabok váltak le róla. A Phobos felületén megfigyelhetők néhány kilométer hosszú, 100–200 méter széles, 20 méter mély barázdák. Becsapódással keletkezett a hold legnagyobb krátere, a Stickney-kráter. A becsapódáskor felszabaduló hő megolvasztotta a felszín alatti kőzeteket, amelyek így részben kitöltötték a mélyedéseket.</p>
+                <p>A legújabb kutatási eredmények szerint nem becsapódás hozta létre a Phobos felszínén található barázdákat, mert azok kora jelentős ingadozást mutat. A legfiatalabb barázdák ugyanis maximum néhány millió évesek. Azokat a Mars és a Phobos között zajló árapály erők hozták létre, ami a hold szétszakadásához fog vezetni. Ugyanis a Phobos belső szerkezete sokkal szivacsosabb, mint korábban gondolták. Valószínűleg viszonylag szorosan egymáshoz illeszkedő darabokból állhat, így szétszakadása könnyebben megtörténik.</p>
+            </div>
+            <div>
+                <h3 id="Mars2">Deimos</h3>
+                <p>A Deimos a Mars kisebbik holdja. Csakúgy, mint a nagyobb Mars-hold, a Phobos, a Deimos is kisméretűnek számít a Naprendszer holdjai között. A Mars mindkét holdját Asaph Hall amerikai csillagász, az Egyesült Államok Tengerészeti Obszervatóriumának (United States Naval Observatory) kutatója fedezte fel 1877. augusztus 12-én.</p>
+                <p>A Deimos sokáig a legkisebb ismert hold volt a Naprendszerben. Alakja szabálytalan, jobban hasonlít a kisbolygókra, mint a holdakra, valószínűsíthető, hogy inkább aszteroidáról van szó, amelyet a Mars gravitációja fogott be. A Mars középpontjától mért közepes keringési távolsága 23 458 km, a marsi egyenlítő síkjában, közel körpályán kering.</p>
+                <p>A világos foltok meteorit becsapódáskor a felszínre hullt finomabb anyagok lehetnek. A másik holddal ellentétben kőtömbök is vannak rajta. Két jelentősebb krátere a felvilágosodás két neves írójáról, Voltaire-ről és Swiftről kapta a nevét.</p>
+                <p>Hasonló szerkezetű égitestek a Jupiter kisbolygóövének külső részében találhatók. Ebből kifolyólag valaha valamelyik másik bolygóból kiszakadt meteor lehetett, de a Mars gravitációs mezejének csapdájába került.</p>
+                <p>Érdekesség, hogy ez a hold a Doom egyik helyszíne.</p>
+            </div>
         </div>
     </div>
     
+    
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
