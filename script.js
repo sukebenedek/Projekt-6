@@ -92,7 +92,6 @@ async function toTransparent(element){
     //0-90
     //document.getElementById("HoldTXT").style.color = "#F0F8FF";
     
-    
     element.addEventListener('mouseover', function(event){
         listeners.push(element);
         transparentAnimation(element);
@@ -102,6 +101,9 @@ async function toTransparent(element){
         index = listeners.indexOf(element);
         listeners.splice(index,1);
     });
+
+    listeners.push(element);
+    transparentAnimation(element);
 }
 
 async function troll() {
