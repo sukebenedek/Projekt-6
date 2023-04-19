@@ -2,15 +2,11 @@
     width: 65%;
     background-color: #282424;
     padding: 12px;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
 }
 
 @media screen and (max-width: 600px) {
     .container { 
         width: 100%;
-
     }
 }
 @media screen and (max-width: 1100px) {
@@ -29,7 +25,7 @@ body{
 :root{
     --bs-primary-rgb: 52,92,124;
     --bs-secondary-rgb: 125,125,125;
-    --bs-success-rgb: 23,174,172;
+    --bs-success-rgb: 50,205,50;
     --bs-info-rgb: 00,114,200;
     --bs-warning-rgb: 243,155,20;
     --bs-danger-rgb: 220, 53, 69;
@@ -41,6 +37,8 @@ body{
 
 p{
     font-size: 16px;
+    text-align: justify;
+    margin-right: 5px;
 }
 
 
