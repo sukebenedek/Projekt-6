@@ -64,7 +64,7 @@ function sinColorInfection(color,step,ToAppear){
 
 
 
-async function transparentAnimation(element){ //fícsör, hogy vibrál a szín xd
+async function transparentAnimation(element,color1="#FFFFFF",color2="#FFFFFF"){ //fícsör, hogy vibrál a szín xd
     /*while(listeners.includes(element)){
         
         await sleep(0.1)
@@ -73,12 +73,12 @@ async function transparentAnimation(element){ //fícsör, hogy vibrál a szín x
         if (!listeners.includes(element)){
             break
         }
-        element.style.color = sinColorInfection("#FFFFFF",j,false)
+        element.style.color = sinColorInfection(color1,j,false)
         
         await sleep(10)
     }
     for (let j = 0; j <= framesOfAnimation; j++) {
-        element.style.color = sinColorInfection("#FFFFFF",j,true)
+        element.style.color = sinColorInfection(color2,j,true)
         
         await sleep(10)
     }
