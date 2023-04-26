@@ -4,6 +4,8 @@
     padding: 12px;
 }
 
+
+
 @media screen and (max-width: 600px) {
     .container { 
         width: 100%;
@@ -49,6 +51,45 @@ p{
     clear: both;
 }
 
+.nav-hover-star, .nav-hover-planet, .nav-hover-moon{
+    transition: color 0.5s ease, font-size 1s ease, margin 1.5s ease;
+}
 
+.nav-hover-star:hover{
+    color: rgb( 243,155,20) !important;
+    font-size: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.nav-hover-planet:hover{
+    color: rgb( 00,114,200) !important;
+    font-size: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.nav-hover-moon:hover{
+    font-size: 24px;
+    color: rgb(50,205,50) !important;
+    margin-right: 8px;
+    margin-left: 8px;
+}
 
+.nav-hover-main{
+  color: red;
+}
 
+.navbar-dark .navbar-brand {
+    color: red;
+}
+
+.nav-hover-main:hover{
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change{
+    0% {color: red;}
+    25% {color: rgb( 243,155,20);}
+    50% {color: rgb( 00,114,200);}
+    75% {color: rgb(50,205,50);}
+    100% {color: red;}
+}
