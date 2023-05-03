@@ -4,21 +4,22 @@
     padding: 12px;
 }
 
-
-
 @media screen and (max-width: 600px) {
     .container { 
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .card-little{
         width: 40% !important;
     }
 }
+
 .navbar{
     position: relative;
 }
+
 body{
     color: white;
     background-image: url(pictures/background.png);
@@ -61,12 +62,14 @@ p{
     margin-right: 8px;
     margin-left: 8px;
 }
+
 .nav-hover-planet:hover{
     color: rgb( 00,114,200) !important;
     font-size: 24px;
     margin-right: 8px;
     margin-left: 8px;
 }
+
 .nav-hover-moon:hover{
     font-size: 24px;
     color: rgb(50,205,50) !important;
@@ -97,3 +100,31 @@ p{
 table ul li{
     list-style-type: "\2605  ";
 }
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+  
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
